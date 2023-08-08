@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>QR Code Generator</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <div class="content">
+    <div class="main">
+      <div class="box" id="box2">
+        <input type="url" name="input" id="input" placeholder='http://www.example.com'/>
+          <h1 id="head"></h1>
+        <div class="img1">
+          <p id="pera"> </p>
+          <img src="" id="qrimg">
+          <p id="pera2"> </p>
+
+          <div class="conte opa2">
+            <div id="btn-re" class="btn opa1">
+              <ul id="MiniLeftNav">
+                <li>
+                  <a class="navtext" href="#"> <i class="fa fa-qrcode" style="font-size:19px;"></i> <span
+                      onclick="relod()">Create New
+                      Code</span></a>
+                </li>
+              </ul>
+            </div>
+            <!--                     <button type="button" id="btn-re"class="btn opa1"  >&nbsp; <i class="fa fa-home" style="font-size: 20px;"></i> <span>Create New Code</span> </button> -->
+          </div>
+        </div>
+        <div class="btn"> <button class="btn2 " type="submit" onclick="qr()">Generate QR Code</button>
+            <button id="bttn" class="opa btn2">
+                <a href="" id="down" download="QR Code">Download <i class="fa fa-download"></i> </a>
+              </button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
